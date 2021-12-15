@@ -1,7 +1,8 @@
 import React, {Component} from "react";
 import {View, Text, Image, StyleSheet, ImageBackground, TouchableOpacity} from "react-native";
 import {TextInput, ScrollView} from "react-native-gesture-handler";
-import Icon from '@expo/vector-icons/Ionicons'
+import Icon from '@expo/vector-icons/Ionicons';
+import Couches from "../common/Couches";
 
 export default class Home extends Component {
     render() {
@@ -29,7 +30,13 @@ export default class Home extends Component {
                     <View style={styles.dotView}/>
                     <Text style={styles.typeTitleInfo}> Good Quality Items</Text>
                 </View>
-
+                <ScrollView horizontal showsHorizontalScrollIndicator={false}>
+                    <Couches
+                        src={require('../images/1.png')}
+                        name="Beautiful Couches"
+                        onPress={()=>this.props.navigation.navigate('Detail')}
+                    />
+                </ScrollView>
             </ScrollView>
         );
     }
