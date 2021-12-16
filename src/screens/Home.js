@@ -4,6 +4,7 @@ import {TextInput, ScrollView} from "react-native-gesture-handler";
 import Icon from '@expo/vector-icons/Ionicons';
 import Couches from "../common/Couches";
 import New from "../common/New";
+import Best from "../common/Best";
 
 export default class Home extends Component {
     render() {
@@ -57,6 +58,12 @@ export default class Home extends Component {
                     <New src={require('../images/sofa.png')}/>
                     <New src={require('../images/lr.png')}/>
                     <New src={require('../images/sofa.png')}/>
+                </ScrollView>
+                <Text style={styles.bestSellersTitle}> Best Sellers </Text>
+                <ScrollView horizontal showsHorizontalScrollIndicator={false}>
+                    <Best/>
+                    <Best/>
+                    <Best/>
                 </ScrollView>
             </ScrollView>
         );
@@ -158,4 +165,10 @@ const styles = StyleSheet.create({
         color: "#4f4a4a",
         fontSize: 20
     },
+    bestSellersTitle:{
+        marginTop: 20,
+        color: "#4f4a4a",
+        fontSize: 18,
+        fontFamily: "Bold"
+    }
 })
