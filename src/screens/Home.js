@@ -3,6 +3,7 @@ import {View, Text, Image, StyleSheet, ImageBackground, TouchableOpacity} from "
 import {TextInput, ScrollView} from "react-native-gesture-handler";
 import Icon from '@expo/vector-icons/Ionicons';
 import Couches from "../common/Couches";
+import New from "../common/New";
 
 export default class Home extends Component {
     render() {
@@ -28,14 +29,34 @@ export default class Home extends Component {
                 <View style={styles.typeTitleView}>
                     <Text style={styles.typeTitle}>Modern</Text>
                     <View style={styles.dotView}/>
-                    <Text style={styles.typeTitleInfo}> Good Quality Items</Text>
+                    <Text style={styles.typeTitleInfo}> Good Quality Items </Text>
                 </View>
-                <ScrollView horizontal showsHorizontalScrollIndicator={false}>
+                <ScrollView horizontal showsHorizontalScrollIndicator={false} style={{marginTop: 10}}>
                     <Couches
                         src={require('../images/1.png')}
                         name="Beautiful Couches"
                         onPress={()=>this.props.navigation.navigate('Detail')}
                     />
+                    <Couches
+                        src={require('../images/2.png')}
+                        name="Autobe best chair"
+                        onPress={()=>this.props.navigation.navigate('Detail')}
+                    />
+                    <Couches
+                        src={require('../images/1.png')}
+                        name="Beautiful Couches"
+                        onPress={()=>this.props.navigation.navigate('Detail')}
+                    />
+                </ScrollView>
+                <View style={styles.arrivalsTitleView}>
+                    <Text style={styles.arrivalsTitle}>New Arrivals</Text>
+                    <View style={styles.dotView}/>
+                    <Text style={styles.typeTitleInfo}> Good Quality Items </Text>
+                </View>
+                <ScrollView horizontal showsHorizontalScrollIndicator={false}>
+                    <New src={require('../images/sofa.png')}/>
+                    <New src={require('../images/lr.png')}/>
+                    <New src={require('../images/sofa.png')}/>
                 </ScrollView>
             </ScrollView>
         );
@@ -125,5 +146,16 @@ const styles = StyleSheet.create({
         fontFamily: "Bold",
         fontSize: 9,
         color: "#4f4a4a"
-    }
+    },
+    arrivalsTitleView: {
+        flexDirection: "row",
+        marginTop: 30,
+        marginBottom: 10,
+        alignItems: "center"
+    },
+    arrivalsTitle: {
+        fontFamily: "Bold",
+        color: "#4f4a4a",
+        fontSize: 20
+    },
 })
