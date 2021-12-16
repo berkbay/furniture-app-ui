@@ -5,8 +5,8 @@ export default class Best extends Component {
     render() {
         return(
             <ImageBackground style={styles.imageBackground} source={require('../images/lr.png')}>
-                <Text style={styles.brandName}>Istikbal Furniture</Text>
-                <Text style={styles.oppurtunity}>GET 35% OFF</Text>
+                <Text style={styles.brandName}>{this.props.name}</Text>
+                <Text style={styles.oppurtunity}>GET {this.props.oppurtunity} OFF</Text>
             </ImageBackground>
         );
     }

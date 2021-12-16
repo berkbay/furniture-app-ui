@@ -61,9 +61,9 @@ export default class Home extends Component {
                 </ScrollView>
                 <Text style={styles.bestSellersTitle}> Best Sellers </Text>
                 <ScrollView horizontal showsHorizontalScrollIndicator={false}>
-                    <Best/>
-                    <Best/>
-                    <Best/>
+                    <Best name="Istikbal Furniture" oppurtunity="35%" src={require('../images/lr.png')}/>
+                    <Best name="Yatas Furniture" oppurtunity="30%" src={require('../images/lr.png')}/>
+                    <Best name="Bellona Furniture" oppurtunity="40%" src={require('../images/lr.png')}/>
                 </ScrollView>
             </ScrollView>
         );
