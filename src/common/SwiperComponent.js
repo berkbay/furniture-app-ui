@@ -14,6 +14,12 @@ export default class SwiperComponent extends Component {
                 <View style={styles.slide}>
                     <Image source={require('../images/unnamed.png')} style={styles.slideImage}/>
                 </View>
+                <View style={styles.slide}>
+                    <Image source={require('../images/unnamed.png')} style={styles.slideImage}/>
+                </View>
+                <View style={styles.slide}>
+                    <Image source={require('../images/unnamed.png')} style={styles.slideImage}/>
+                </View>
             </Swiper>
         );
     }
