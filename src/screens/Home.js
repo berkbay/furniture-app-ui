@@ -36,16 +36,19 @@ export default class Home extends Component {
                     <Couches
                         src={require('../images/1.png')}
                         name="Beautiful Couches"
+                        price="349.49 USD"
                         onPress={()=>this.props.navigation.navigate('Detail')}
                     />
                     <Couches
                         src={require('../images/2.png')}
                         name="Autobe best chair"
+                        price="469.69 USD"
                         onPress={()=>this.props.navigation.navigate('Detail')}
                     />
                     <Couches
                         src={require('../images/1.png')}
                         name="Beautiful Couches"
+                        price="379.79 USD"
                         onPress={()=>this.props.navigation.navigate('Detail')}
                     />
                 </ScrollView>

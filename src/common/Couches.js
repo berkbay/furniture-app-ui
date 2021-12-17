@@ -17,7 +17,7 @@ export default class Couches extends Component{
                 </Text>
                 <View style={styles.buyingInformation}>
                     <View style={{width: "80%"}}>
-                        <Text style={styles.price}>399.90 USD</Text>
+                        <Text style={styles.price}>{this.props.price}</Text>
                     </View>
                     <View style={{width: "20%"}}>
                         <Image style={styles.addImage} source={require('../images/add.png')}/>
