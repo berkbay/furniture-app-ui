@@ -27,7 +27,7 @@ export default class Detail extends Component {
                         <View style={styles.colorBox} backgroundColor="#707070"/>
                         <View style={styles.colorBox} backgroundColor="#b3b4b9"/>
                     </View>
-                    <SwiperComponent/>
+                    <SwiperComponent src={params.src}/>
                 </View>
                 <View style={styles.saveImageView}>
                     <Image source={require('../images/save.png')} style={styles.saveImage}/>

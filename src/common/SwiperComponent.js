@@ -12,13 +12,13 @@ export default class SwiperComponent extends Component {
             activeDotStyle={styles.activeDotStyle}
             >
                 <View style={styles.slide}>
-                    <Image source={require('../images/unnamed.png')} style={styles.slideImage}/>
+                    <Image source={this.props.src} style={styles.slideImage}/>
                 </View>
                 <View style={styles.slide}>
-                    <Image source={require('../images/unnamed.png')} style={styles.slideImage}/>
+                    <Image source={this.props.src}  style={styles.slideImage}/>
                 </View>
                 <View style={styles.slide}>
-                    <Image source={require('../images/unnamed.png')} style={styles.slideImage}/>
+                    <Image source={this.props.src}  style={styles.slideImage}/>
                 </View>
             </Swiper>
         );
@@ -50,6 +50,6 @@ const styles = StyleSheet.create({
     },
     slideImage: {
         height:300,
-        width: 300
+        width: 280
     }
 })
