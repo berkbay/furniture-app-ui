@@ -10,6 +10,7 @@ import {ScrollView} from "react-native-gesture-handler";
 
 export default class Detail extends Component {
     render() {
+        const params = this.props.navigation.state.params;
         return(
             <View style={styles.pageView}>
                 <View style={styles.headerView}>
@@ -33,7 +34,7 @@ export default class Detail extends Component {
                 </View>
                 <View style={styles.furnitureCustomerView}>
                     <View style={{width: "65%"}}>
-                        <Text style={styles.furnitureName}>Autobe Best Chair</Text>
+                        <Text style={styles.furnitureName}>{params.name}</Text>
                     </View>
                     <View style={{width: "35%"}}>
                         <Text style={styles.ratingText}>Customer Rating</Text>
@@ -51,7 +52,7 @@ export default class Detail extends Component {
                         </View>
                     </View>
                 </View>
-                <Text style={styles.priceText}>449.49 USD</Text>
+                <Text style={styles.priceText}>{params.price}</Text>
                 <Text style={styles.furnitureExplanation}>
                     Full sleeves short dress with three attractive colors and available in various sizes.
                 </Text>
